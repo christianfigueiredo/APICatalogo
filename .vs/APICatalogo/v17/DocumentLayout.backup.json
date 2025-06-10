@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\projetos\\.NET\\APICatalogo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4249E57E-E644-4BE2-A356-02A04472D8E0}|APICatalogo\\APICatalogo.csproj|c:\\projetos\\.net\\apicatalogo\\apicatalogo\\migrations\\20250610151438_populacategorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4249E57E-E644-4BE2-A356-02A04472D8E0}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\migrations\\20250610151438_populacategorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4249E57E-E644-4BE2-A356-02A04472D8E0}|APICatalogo\\APICatalogo.csproj|c:\\projetos\\.net\\apicatalogo\\apicatalogo\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4249E57E-E644-4BE2-A356-02A04472D8E0}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -18,11 +22,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "20250610151438_PopulaCategorias.cs",
+              "DocumentMoniker": "C:\\projetos\\.NET\\APICatalogo\\APICatalogo\\Migrations\\20250610151438_PopulaCategorias.cs",
+              "RelativeDocumentMoniker": "APICatalogo\\Migrations\\20250610151438_PopulaCategorias.cs",
+              "ToolTip": "C:\\projetos\\.NET\\APICatalogo\\APICatalogo\\Migrations\\20250610151438_PopulaCategorias.cs",
+              "RelativeToolTip": "APICatalogo\\Migrations\\20250610151438_PopulaCategorias.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T15:14:50.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Categoria.cs",
               "DocumentMoniker": "C:\\projetos\\.NET\\APICatalogo\\APICatalogo\\Models\\Categoria.cs",
               "RelativeDocumentMoniker": "APICatalogo\\Models\\Categoria.cs",
@@ -35,13 +52,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Produto.cs",
               "DocumentMoniker": "C:\\projetos\\.NET\\APICatalogo\\APICatalogo\\Models\\Produto.cs",
               "RelativeDocumentMoniker": "APICatalogo\\Models\\Produto.cs",
               "ToolTip": "C:\\projetos\\.NET\\APICatalogo\\APICatalogo\\Models\\Produto.cs",
               "RelativeToolTip": "APICatalogo\\Models\\Produto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-10T14:47:08.634Z",
               "EditorCaption": ""
