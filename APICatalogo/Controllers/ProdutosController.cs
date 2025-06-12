@@ -25,5 +25,29 @@ namespace APICatalogo.Controllers
             }
             return Ok(produtos);
         }
+
+        [HttpGet("{id:int}", Name="ObterProduto")]
+        public ActionResult<Produto> Get(int id)
+        {
+            var produto = _contexto.Produtos?.FirstOrDefault(p => p.ProdutoId == id);
+            if (produto is null)
+            {
+                return NotFound("Produto nao encontrado...");
+            }
+            return Ok(produto);
+        }
+
+        [HttpPost]
+        public ActionResult Post(Produto produto)
+        {
+            if (produto is null)
+            {
+                return BadRequest("Produto nao pode ser nulo.");
+            }
+
+            _contexto.Produtos?.Add(produto);
+            _contexto.SaveChanges();
+            return new CreatedAtRouteResult("ObterProduto", new { id = produto.ProdutoId }, produto);
+        }
     }
 }
