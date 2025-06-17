@@ -18,13 +18,14 @@ namespace APICatalogo.Controllers
         [HttpGet("produtos")]
         public ActionResult<IEnumerable<Categoria>> GetCategoriasProdutos()
         {
-            return _contexto.Categorias?.Include(c => c.Produtos).ToList() ?? new List<Categoria>();
+           // return _contexto.Categorias?.Include(c => c.Produtos).ToList() ?? new List<Categoria>();
+            return _contexto.Categorias?.Include(c => c.Produtos).Where(c=>c.CategoriaId <= 5).ToList() ?? new List<Categoria>();
         }
 
         [HttpGet]
         public ActionResult<IEnumerable<Categoria>> Get()
         {
-            var categorias = _contexto.Categorias?.ToList();
+            var categorias = _contexto.Categorias?.AsNoTracking().ToList();
             if (categorias is null || !categorias.Any())
             {
                 return NotFound("Nenhuma categoria encontrada.");
