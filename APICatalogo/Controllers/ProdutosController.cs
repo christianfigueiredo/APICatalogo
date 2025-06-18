@@ -18,7 +18,7 @@ namespace APICatalogo.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Produto>> Get()
         {
-            var produtos = _contexto.Produtos?.ToList().;
+            var produtos = _contexto.Produtos?.ToList();
             if (produtos is null)
             {
                 return NotFound();

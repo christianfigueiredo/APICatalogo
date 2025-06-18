@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace APICatalogo.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class CategoriasController : ControllerBase
     {
@@ -25,22 +25,39 @@ namespace APICatalogo.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Categoria>> Get()
         {
-            var categorias = _contexto.Categorias?.AsNoTracking().ToList();
-            if (categorias is null || !categorias.Any())
+            try
             {
-                return NotFound("Nenhuma categoria encontrada.");
+                var categorias = _contexto.Categorias?.AsNoTracking().ToList();
+                if (categorias is null || !categorias.Any())
+                {
+                    return NotFound("Nenhuma categoria encontrada.");
+                }
+                return Ok(categorias);
             }
-            return Ok(categorias);
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Erro interno do servidor: {ex.Message}");
+            }
+            
         }
+
         [HttpGet("{id:int}", Name = "ObterCategoria")]
         public ActionResult<Categoria> Get(int id)
         {
-            var categoria = _contexto.Categorias?.FirstOrDefault(c => c.CategoriaId == id);
-            if (categoria is null)
+            try
             {
-                return NotFound("Categoria nao encontrada.");
+                var categoria = _contexto.Categorias?.FirstOrDefault(c => c.CategoriaId == id);
+                if (categoria is null)
+                {
+                    return NotFound($"Categoria com id = {id} não encontrada.");
+                }
+                return Ok(categoria);
             }
-            return Ok(categoria);
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Erro interno do servidor: {ex.Message}");
+            }
+           
         }
 
         [HttpPost]
@@ -68,13 +85,14 @@ namespace APICatalogo.Controllers
             _contexto.SaveChanges();
             return Ok(categoria);
         }
+
         [HttpDelete("{id:int}")]
         public IActionResult Delete(int id)
         {
             var categoria = _contexto.Categorias?.FirstOrDefault(c => c.CategoriaId == id);
             if (categoria is null)
             {
-                return NotFound("Categoria nao encontrada.");
+                return NotFound($"Categoria com id={id} nao encontrada.");
             }
 
             _contexto.Categorias?.Remove(categoria);

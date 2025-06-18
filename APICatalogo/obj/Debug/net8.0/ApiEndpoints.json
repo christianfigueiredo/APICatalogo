@@ -2,7 +2,7 @@
   {
     "ContainingType": "APICatalogo.Controllers.CategoriasController",
     "Method": "Get",
-    "RelativePath": "api/Categorias",
+    "RelativePath": "Categorias",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -22,7 +22,7 @@
   {
     "ContainingType": "APICatalogo.Controllers.CategoriasController",
     "Method": "Post",
-    "RelativePath": "api/Categorias",
+    "RelativePath": "Categorias",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -38,7 +38,7 @@
   {
     "ContainingType": "APICatalogo.Controllers.CategoriasController",
     "Method": "Get",
-    "RelativePath": "api/Categorias/{id}",
+    "RelativePath": "Categorias/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -65,7 +65,7 @@
   {
     "ContainingType": "APICatalogo.Controllers.CategoriasController",
     "Method": "Put",
-    "RelativePath": "api/Categorias/{id}",
+    "RelativePath": "Categorias/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -86,7 +86,7 @@
   {
     "ContainingType": "APICatalogo.Controllers.CategoriasController",
     "Method": "Delete",
-    "RelativePath": "api/Categorias/{id}",
+    "RelativePath": "Categorias/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -102,7 +102,7 @@
   {
     "ContainingType": "APICatalogo.Controllers.CategoriasController",
     "Method": "GetCategoriasProdutos",
-    "RelativePath": "api/Categorias/produtos",
+    "RelativePath": "Categorias/produtos",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
