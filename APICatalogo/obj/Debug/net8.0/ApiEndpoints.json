@@ -221,16 +221,6 @@
   },
   {
     "ContainingType": "APICatalogo.Controllers.ProdutosController",
-    "Method": "GetInterface",
-    "RelativePath": "Produtos/interface",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "APICatalogo.Controllers.ProdutosController",
     "Method": "GetPrimeiro",
     "RelativePath": "Produtos/primeiroProduto",
     "HttpMethod": "GET",
